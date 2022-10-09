@@ -37,7 +37,7 @@
   "id":"/",
   "protocol_handlers": [
     {
-      "protocol": "web",
+      "protocol": "web+",
       "url": "/"
     }
   ]
