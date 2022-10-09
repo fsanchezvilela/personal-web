@@ -4,6 +4,7 @@ specifiers:
   '@types/node': 18.8.3
   '@types/react': 18.0.21
   '@types/react-dom': 18.0.6
+  circular-dependency-plugin: ^5.2.2
   eslint: 8.25.0
   eslint-config-next: 12.3.1
   next: 12.3.1
@@ -13,6 +14,7 @@ specifiers:
   typescript: 4.8.4
 
 dependencies:
+  circular-dependency-plugin: 5.2.2_webpack@5.74.0
   next: 12.3.1_6tziyx3dehkoeijunclpkpolha
   next-pwa: 5.6.0_r4fnhujxxwelquxkfzi3g5np24
   react: 18.2.0
@@ -2028,6 +2030,15 @@ packages:
   /chrome-trace-event/1.0.3:
     resolution: {integrity: sha512-p3KULyQg4S7NIHixdwbGX+nFHkoBiA4YQmyWtjb8XngSKV124nJmRysgAeujbUVb15vh+RvFUfCPqU7rXk+hZg==}
     engines: {node: '>=6.0'}
+    dev: false
+
+  /circular-dependency-plugin/5.2.2_webpack@5.74.0:
+    resolution: {integrity: sha512-g38K9Cm5WRwlaH6g03B9OEz/0qRizI+2I7n+Gz+L5DxXJAPAiWQvwlYNm1V1jkdpUv95bOe/ASm2vfi/G560jQ==}
+    engines: {node: '>=6.0.0'}
+    peerDependencies:
+      webpack: '>=4.0.1'
+    dependencies:
+      webpack: 5.74.0
     dev: false
 
   /clean-webpack-plugin/4.0.0_webpack@5.74.0:
