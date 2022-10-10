@@ -35,8 +35,8 @@
     {
       "protocol": "web+home",
       "name": "website homepage",
-      "url":"/",
-      "uriTemplate": "/"
+      "url":"/?type=%s",
+      "uriTemplate": "/?type=%s"
     }
   ]
 }
