@@ -2,8 +2,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 
-const Home: NextPage = () => {
-  return (
+const Home: NextPage = () => (
     <div className={styles.container}>
       <Head>
         <title>Fernando Sanchez | Software Engineer</title>
@@ -22,6 +21,5 @@ const Home: NextPage = () => {
       </footer>
     </div>
   );
-};
 
 export default Home;
