@@ -1,0 +1,55 @@
+{
+  "bail": true,
+  "verbose": true,
+  "preset": "ts-jest",
+  "globals": {
+    "ts-jest": {
+      "diagnostics": false
+    }
+  },
+  "collectCoverage": false,
+  "coverageDirectory": "./coverage/",
+  "coverageReporters": ["lcov", "text"],
+  "coveragePathIgnorePatterns": [
+    "<rootDir>/node_modules/",
+    "<rootDir>/dist/",
+    "<rootDir>/public/",
+    "<rootDir>/typings/",
+    "<rootDir>/scripts/",
+    "<rootDir>/test/",
+    "<rootDir>/e2eTests/"
+  ],
+  "collectCoverageFrom": ["src//*.(j|t)sx", "!src//(bootstrap|routes).(j|t)sx", "!/tests/"],
+  "coverageThreshold": {
+    "global": {
+      "branches": 40,
+      "functions": 40,
+      "lines": 60,
+      "statements": 50
+    }
+  },
+  "testPathIgnorePatterns": [
+    "<rootDir>/node_modules/",
+    "<rootDir>/dist/",
+    "<rootDir>/public/",
+    "<rootDir>/typings/",
+    "<rootDir>/e2eTests/",
+    "<rootDir>/scripts/",
+    "<rootDir>/test/",
+    "<rootDir>/coverage/"
+  ],
+  "setupFiles": ["./test/setup.js"],
+  "testMatch": ["<rootDir>/src/*/?()components.+(spec|test).[jt]s?(x)"],
+  "rootDir": "./",
+  "modulePaths": ["./"],
+  "transform": {
+    "^.+\\.tsx?$": "ts-jest",
+    "^.+\\.jsx?$": "ts-jest"
+  },
+  "moduleNameMapper": {
+    "^src(.*)$": "<rootDir>/src$1",
+    "^.+\\.(css|less|scss|sass)$": "identity-obj-proxy",
+    "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/test/globalMocks/fileMock.js",
+    "array-move": "<rootDir>/test/globalMocks/arrayMoveMock.js"
+  }
+}
