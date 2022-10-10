@@ -1,0 +1,11 @@
+# Ignore artifacts:
+build
+dist
+coverage
+node_modules
+.next
+
+# Ignore all HTML files:
+*.html
+.gitignore
+.prettierignore
