@@ -13,7 +13,7 @@ const Home: NextPage = () => {
         <h1 className={styles.title}>Hi Welcome</h1>
 
         <p className={styles.description}>
-          Im Fernando Sanchez Software Engenieer
+          Im Fernando Sanchez Software Engineer
         </p>
       </main>
 
