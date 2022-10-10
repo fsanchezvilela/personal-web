@@ -22,9 +22,6 @@
     "test:component:changed": "pnpm run test:component -- --onlyChanged",
     "test:component:coverage": "pnpm run test:component -- --coverage"
   },
-  "pre-push":{
-    "src/**/*.?s*":["pnpm run test"]
-  },
   "dependencies": {
     "circular-dependency-plugin": "^5.2.2",
     "next": "12.3.1",
