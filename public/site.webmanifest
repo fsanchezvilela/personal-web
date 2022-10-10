@@ -33,10 +33,10 @@
   "id":"/",
   "protocol_handlers": [
     {
-      "protocol": "home+nav",
+      "protocol": "web+nav",
       "name": "website homepage",
-      "url":"/#%s",
-      "uriTemplate": "/#%s"
+      "url":"/%s",
+      "uriTemplate": "/%s"
     }
   ]
 }
