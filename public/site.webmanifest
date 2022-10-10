@@ -34,7 +34,7 @@
   "protocol_handlers": [
     {
       "protocol": "web+nav",
-      "name": "website homepage",
+      "name": "website navigation",
       "url":"/%s",
       "uriTemplate": "/%s"
     }
