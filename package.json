@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "check-version":"node ./scripts/tools/check-version.js",
+    "dev": "pnpm run check-version && next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "pnpm run check-version && next start",
     "lint": "next lint"
   },
   "dependencies": {
