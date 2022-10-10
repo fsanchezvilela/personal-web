@@ -1,8 +1,11 @@
-const CircularDependencyPlugin = require('circular-dependency-plugin')
-const withPWA =  require('next-pwa')
+const CircularDependencyPlugin = require('circular-dependency-plugin');
+const withPWA = require('next-pwa')({
+  dest: 'public',
+  disable: process.env.NODE_ENV !== 'production',
+});
 const runtimeCaching = require('next-pwa/cache');
 
-const plugins = []
+const plugins = [];
 // Content Security Policy
 const ContentSecurityPolicy = `
    default-src 'self';
@@ -38,8 +41,7 @@ const securityHeaders = () => [
   },
 ];
 
-
-plugins.push(withPWA)
+plugins.push(withPWA);
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -54,8 +56,6 @@ const nextConfig = {
     Problem with 12.3.1 false error for property see more https://github.com/vercel/next.js/issues/39161
   */
   pwa: {
-    dest: 'public',
-    disable: process.env.NODE_ENV !== 'production',
     register: true,
     skipWaiting: true,
     runtimeCaching,
@@ -79,12 +79,10 @@ const nextConfig = {
         failOnError: true,
         allowAsyncCycles: false,
         cwd: process.cwd(),
-      }),
-    )
-    return config
+      })
+    );
+    return config;
   },
 };
 
-
-
-module.exports = () => plugins.reduce((acc, next) => next(acc), nextConfig)
+module.exports = () => plugins.reduce((acc, next) => next(acc), nextConfig);

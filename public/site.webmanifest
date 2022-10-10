@@ -37,8 +37,9 @@
   "id":"/",
   "protocol_handlers": [
     {
-      "protocol": "web+",
-      "url": "/"
+      "protocol": "web+home",
+      "name": "website homepage",
+      "uriTemplate": "/"
     }
   ]
 }
