@@ -7,13 +7,17 @@ const runtimeCaching = require('next-pwa/cache');
 
 const plugins = [];
 // Content Security Policy
-const ContentSecurityPolicy = `
+let ContentSecurityPolicy = ``
+
+if (process.env.NODE_ENV === 'production') { 
+ ContentSecurityPolicy = `
    default-src 'self';
    script-src 'self';
    connect-src 'self' vitals.vercel-insights.com;
    style-src 'self';
    font-src 'self';  
  `;
+}
 
 /**
  * Security:
