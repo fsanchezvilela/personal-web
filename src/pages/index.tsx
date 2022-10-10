@@ -1,22 +1,21 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import styles from '../styles/Home.module.css';
+
 
 const Home: NextPage = () => (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Fernando Sanchez | Software Engineer</title>
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>Hi Welcome</h1>
+      <main>
+        <p>Hi Welcome</p>
 
-        <p className={styles.description}>
+        <h1 className="text-3xl font-bold underline">
           Im Fernando Sanchez Software Engineer
-        </p>
+        </h1>
       </main>
-
-      <footer className={styles.footer}>
+      <footer >
         <p>footer here</p>
       </footer>
     </div>

@@ -8,8 +8,8 @@
     "start": "pnpm run check-version && next start",
     "build": "next build",
     "lint": "next lint",
-    "lint:fix": "pnpm run lint -- --fix 'src/**/*'",
-    "format": "prettier --write 'src/**/*'",
+    "lint:fix": "pnpm run lint -- --fix './src/**/*'",
+    "format": "prettier --write './src/**/*'",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -27,6 +27,7 @@
     "@types/react-dom": "18.0.6",
     "@typescript-eslint/eslint-plugin": "^5.39.0",
     "@typescript-eslint/parser": "^5.39.0",
+    "autoprefixer": "^10.4.12",
     "eslint": "8.25.0",
     "eslint-config-next": "12.3.1",
     "eslint-config-prettier": "^8.5.0",
@@ -34,7 +35,9 @@
     "eslint-plugin-prettier": "^4.2.1",
     "husky": "^8.0.0",
     "lint-staged": "^13.0.3",
+    "postcss": "^8.4.17",
     "prettier": "^2.7.1",
+    "tailwindcss": "^3.1.8",
     "typescript": "4.8.4"
   }
 }
