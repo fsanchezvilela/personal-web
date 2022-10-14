@@ -7,13 +7,16 @@ module.exports = {
       desktop: '1248px'
     },
     colors: {
-      charcoal: "#243B4Aff",
-      "silver-sand": "#BABFC6ff",
-      cultured: "#F2F3F3ff",
-      "roman-silver": "#8B929Dff",
-      keppel: "#48B09Cff",
-      "oxford-blue": "#0B192Fff",
-      "dark-jungle-green": "#0C1D1Aff",
+      stale: '#8892b0',
+      transparent: 'transparent',
+      charcoal: "#243B4A",
+      "silver-sand": "#BABFC6",
+      cultured: "#F2F3F3",
+      "roman-silver": "#8B929D",
+      keppel: "#48B09C",
+      "keppel-tint": "#64ffda1a",
+      "oxford-blue": "#0B192F",
+      "dark-jungle-green": "#0C1D1A",
     },
     boxShadow: {
       sm: '0px 2px 4px 0px rgba(11,10,55,0.15)',
