@@ -14,7 +14,7 @@ const Button: FC<ButtonPropsType & DetailedHTMLProps<ButtonHTMLAttributes<HTMLBu
     return <button {...props} className={ButtonStyleTwClassMapping[buttonStyle]}>{children}</button>
   }
 
-  const RenderAnchor = () => <a className={ButtonStyleTwClassMapping[buttonStyle]} href={href}>{children}</a>
+  const RenderAnchor = () => <a className={ButtonStyleTwClassMapping['tertiary']} href={href}>{children}</a>
 
   return (
     href ?
