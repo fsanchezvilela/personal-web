@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Component Test Renders a Disabled Button 1`] = `
+<DocumentFragment>
+  <button
+    class="cursor-not-allowed rounded border transition px-3 py-2 bg-silver-sand text-roman-silver"
+    disabled=""
+  >
+    disabled button
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button Component Test Renders a Primary Button Default 1`] = `
+<DocumentFragment>
+  <button
+    class="rounded border transition bg-transparent text-keppel  hover:bg-keppel-tint px-3 py-2"
+  >
+    click me! default button
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button Component Test Renders a Primary Button with props 1`] = `
+<DocumentFragment>
+  <button
+    class="rounded border transition bg-transparent text-keppel  hover:bg-keppel-tint px-3 py-2"
+  >
+    click me! primary button
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button Component Test Renders a Secondary Button 1`] = `
+<DocumentFragment>
+  <button
+    class="rounded border transition px-3 py-2 hover:bg-dark-jungle-green hover:culturedr-sand text-silver-sand"
+  >
+    click me! secondary button
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button Component Test Renders a Tertiary Button 1`] = `
+<DocumentFragment>
+  <button
+    class=" rounded border-dark-jungle-green transition px-3 py-2 hover:text-silver-sand text-keppel"
+  >
+    click me! tertiary button
+  </button>
+</DocumentFragment>
+`;

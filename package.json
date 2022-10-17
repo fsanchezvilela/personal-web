@@ -11,16 +11,7 @@
     "lint:fix": "pnpm run lint -- --fix './src/**/*'",
     "format": "prettier --write './src/**/*'",
     "prepare": "husky install",
-    "test": "npm run test:unit:coverage && npm run test:component:coverage",
-    "tests": "npm run test:unit:coverage && npm run test:component:coverage && npm run test:e2e",
-    "test:unit": "jest --passWithNoTests --config ./jest.unit.json",
-    "test:unit:update": "pnpm run test:unit -- --u",
-    "test:unit:changed": "pnpm run test:unit -- --onlyChanged",
-    "test:unit:coverage": "pnpm run test:unit -- --coverage",
-    "test:component": "jest --passWithNoTests --config ./jest.component.json",
-    "test:component:update": "pnpm run test:component -- -u",
-    "test:component:changed": "pnpm run test:component -- --onlyChanged",
-    "test:component:coverage": "pnpm run test:component -- --coverage"
+    "test": "jest src -- -u"
   },
   "dependencies": {
     "circular-dependency-plugin": "^5.2.2",
@@ -34,6 +25,7 @@
     "@commitlint/config-conventional": "^17.1.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
+    "@types/jest": "^29.1.2",
     "@types/node": "18.8.3",
     "@types/react": "18.0.21",
     "@types/react-dom": "18.0.6",
