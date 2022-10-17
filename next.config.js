@@ -12,10 +12,11 @@ let ContentSecurityPolicy = ``
 if (process.env.NODE_ENV === 'production') { 
  ContentSecurityPolicy = `
    default-src 'self';
-   script-src 'self';
+   script-src 'self' 'unsafe-inline' 'unsafe-eval';
    connect-src 'self' vitals.vercel-insights.com;
-   style-src 'self';
-   font-src 'self';  
+   style-src 'self' 'unsafe-inline' *;
+   font-src 'self'; 
+   img-src 'self' data: *;
  `;
 }
 

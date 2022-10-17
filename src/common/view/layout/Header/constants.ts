@@ -1,6 +1,5 @@
 import { LinkHeaderHashNavigationType } from "./types"
 
-
 const AboutNavigation: LinkHeaderHashNavigationType = {
   id: 'header-item-0--about',
   hash: '#about',
@@ -22,4 +21,6 @@ const ContactNavigation: LinkHeaderHashNavigationType = {
   label: '0100 | Contact'
 } 
 
-export const LinkAnchorNavigation:Array<LinkHeaderHashNavigationType> = [AboutNavigation, ExperienceNavigation, WorkNavigation, ContactNavigation]
+export const LinkAnchorNavigation: Array<LinkHeaderHashNavigationType> = [AboutNavigation, ExperienceNavigation, WorkNavigation, ContactNavigation]
+
+export const BrandSVG = '/assets/svg/cell-molecule.svg'
