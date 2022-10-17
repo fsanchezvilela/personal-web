@@ -15,7 +15,8 @@ if (process.env.NODE_ENV === 'production') {
    script-src 'self';
    connect-src 'self' vitals.vercel-insights.com;
    style-src 'self';
-   font-src 'self';  
+   font-src 'self'; 
+   img-src 'self' data: *;
  `;
 }
 
