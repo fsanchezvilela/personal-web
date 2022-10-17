@@ -1,7 +1,5 @@
 import { LinkHeaderHashNavigationType } from "./types"
 
-
-
 const AboutNavigation: LinkHeaderHashNavigationType = {
   id: 'header-item-0--about',
   hash: '#about',
